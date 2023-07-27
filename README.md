@@ -11,7 +11,13 @@
 </p>
 
 ## Installation
-The Meowix repositories *should* already be included by default in Meowix Linux. ~~If installing this on another Arch-based distro, however, simply add these lines to /etc/pacman.conf:~~ *The Meowix Linux Package Repository is currently not available; we need to add the first packages to the repo. Give us, at most, a day or two.*
+The Meowix repositories *should* already be included by default in Meowix Linux. If installing this on another Arch-based distro, however, simply add these lines to /etc/pacman.conf:
+
+```
+[Meowix-Repo]
+SigLevel = Optional DatabaseOptional
+Server = https://raw.githubusercontent.com/Meowix-Linux/$repo/main/$arch
+```
 
 ## License
 
