@@ -26,6 +26,7 @@ The following packages were taken from the AUR - check them out!
 - [bspwm-git](https://aur.archlinux.org/packages/bspwm-git)
 - [catppuccin-gtk-theme-mocha](https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha)
 - [lightly-git](https://aur.archlinux.org/packages/lightly-git)
+- [papirus-folders-catppucin-git](https://aur.archlinux.org/packages/papirus-folders-catppuccin-git)
 - [sxhkd-git](https://aur.archlinux.org/packages/sxhkd-git)
 
 ## License
