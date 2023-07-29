@@ -25,7 +25,9 @@ Then just run `sudo pacman -Syyu`. Make sure there are 2 (two) y's in -Syyu! Aft
 The following packages were taken from the AUR - check them out!
 - [bspwm-git](https://aur.archlinux.org/packages/bspwm-git)
 - [catppuccin-gtk-theme-mocha](https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha)
+- [ckbcomp](https://aur.archlinux.org/packages/ckbcomp)
 - [lightly-git](https://aur.archlinux.org/packages/lightly-git)
+- [mkinitcpio-openswap](https://aur.archlinux.org/packages/mkinitcpio-openswap)
 - [papirus-folders-catppucin-git](https://aur.archlinux.org/packages/papirus-folders-catppuccin-git)
 - [sxhkd-git](https://aur.archlinux.org/packages/sxhkd-git)
 
