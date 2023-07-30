@@ -27,6 +27,7 @@ The following packages were taken from the AUR - check them out!
 - [calamares](https://aur.archlinux.org/packages/calamares)
 - [catppuccin-gtk-theme-mocha](https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha)
 - [ckbcomp](https://aur.archlinux.org/packages/ckbcomp)
+- [iwgtk](https://aur.archlinux.org/packages/iwgtk)
 - [lightly-git](https://aur.archlinux.org/packages/lightly-git)
 - [mkinitcpio-openswap](https://aur.archlinux.org/packages/mkinitcpio-openswap)
 - [papirus-folders-catppucin-git](https://aur.archlinux.org/packages/papirus-folders-catppuccin-git)
