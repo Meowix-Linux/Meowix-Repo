@@ -21,6 +21,11 @@ Server = https://raw.githubusercontent.com/Meowix-Linux/$repo/main/$arch
 
 Then just run `sudo pacman -Syyu`. Make sure there are 2 (two) y's in -Syyu! After that, you should be able to install any package from the repo with `pacman` as you would with any package from the official repos.
 
+## PKGBUILDs
+The PKGBUILD files for the packages in this repository are either:
+- from the AUR, in which case you can find their links in the Acknowledgements section below, or
+- packaged by the Meowix maintainers, in which case you can find the PKGBUILD as a repository in the organization with the same name as the package.
+
 ## Acknowledgements
 The following packages were taken from the AUR - check them out!
 - [bspwm-git](https://aur.archlinux.org/packages/bspwm-git)
@@ -34,5 +39,4 @@ The following packages were taken from the AUR - check them out!
 - [sxhkd-git](https://aur.archlinux.org/packages/sxhkd-git)
 
 ## License
-
 This repository is licensed under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html), but that does not mean all software in this repo is too. Licenses for other software included in the distribution (i.e. the software in this repository) are usually found within the files provided by their respective packages. If you have found that Meowix has violated any licenses or copyrights, please don't hesitate to open an issue on the repository/repositories that do so and we will do our best to respond in a timely manner.
