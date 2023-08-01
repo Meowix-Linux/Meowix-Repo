@@ -34,10 +34,13 @@ The following packages were taken from the AUR - check them out!
 - [ckbcomp](https://aur.archlinux.org/packages/ckbcomp)
 - [hyfetch-git](https://aur.archlinux.org/packages/hyfetch-git)
 - [iwgtk](https://aur.archlinux.org/packages/iwgtk)
+- [lightdm-settings](https://aur.archlinux.org/packages/lightdm-settings)
 - [lightly-git](https://aur.archlinux.org/packages/lightly-git)
 - [mkinitcpio-openswap](https://aur.archlinux.org/packages/mkinitcpio-openswap)
 - [papirus-folders-catppucin-git](https://aur.archlinux.org/packages/papirus-folders-catppuccin-git)
+- [qview](https://aur.archlinux.org/packages/qview)
 - [sxhkd-git](https://aur.archlinux.org/packages/sxhkd-git)
+- [xinit-xsession](https://aur.archlinux.org/packages/xinit-xsession)
 
 ## License
 This repository is licensed under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html), but that does not mean all software in this repo is too. Licenses for other software included in the distribution (i.e. the software in this repository) are usually found within the files provided by their respective packages. If you have found that Meowix has violated any licenses or copyrights, please don't hesitate to open an issue on the repository/repositories that do so and we will do our best to respond in a timely manner.
