@@ -24,7 +24,7 @@ Then just run `sudo pacman -Syyu`. Make sure there are 2 (two) y's in -Syyu! Aft
 ## PKGBUILDs
 The PKGBUILD files for the packages in this repository are either:
 - from the AUR, in which case you can find their links in the Acknowledgements section below, or
-- packaged by the Meowix maintainers, in which case you can find the PKGBUILD as a repository in the organization with the same name as the package.
+- packaged by the Meowix maintainers, in which case you can find the PKGBUILD as a repository in the organization with the same name as the package appended with "-PKGBUILD"; for example, `Meowix-Linux/lsb-release-meowix-PKGBUILD`.
 
 ## Acknowledgements
 The following packages were taken from the AUR - check them out!
