@@ -14,33 +14,42 @@ if [ ! -d "x86_64" ]; then
   exit 1
 fi
 
-## BEGIN NEW CODE
+# Define package names to exclude from building
 exclusions=("lsb-release-meowix")
+# Initialize an array to store package names
 packages=()
 
+# Iterate through files in the x86_64 directory
 for file in x86_64/*
 do
+    # Check if the file has the .pkg.tar.zst extension
     if [[ "$file" =~ \.pkg\.tar\.zst$ ]]; then
+        # Get the package name from the file using pacman
         package_name="$(pacman -Qqp $file)"
         if [[ ! " ${exclusions[@]} " =~ " $package_name " ]]; then
+            # Add the package name to the array
             packages+=("$package_name")
         fi
     fi
 done
 
+# Remove duplicate package names, sort, and store in the packages array
 packages=($(echo "${packages[@]}" | tr ' ' '\n' | sort -u))
 
 echo "The following packages will be built:"
+# Print the package names to be built
 for i in "${packages[@]}"
 do
     echo "$i"
 done
 
+# Ask for user confirmation to proceed with building
 read -p "Proceed with build? [Y/n] " response
 response=${response:-Y}
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
     echo "Building packages."
+    # Loop through packages and build them
     for pkg_to_build in "${packages[@]}"
     do
         paru -G "$pkg_to_build"
@@ -54,8 +63,6 @@ else
 	echo "Exiting."
 	exit 0
 fi
-
-## END NEW CODE
 
 # Delete Meowix-Repo.db and Meowix-Repo.files if they exist in x86_64
 if [ -f "x86_64/Meowix-Repo.db" ]; then
