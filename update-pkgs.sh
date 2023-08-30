@@ -15,7 +15,7 @@ if [ ! -d "x86_64" ]; then
 fi
 
 # Define package names to exclude from building
-exclusions=("lsb-release-meowix")
+exclusions=("lsb-release-meowix" "bsp-layout")
 # Initialize an array to store package names
 packages=()
 
