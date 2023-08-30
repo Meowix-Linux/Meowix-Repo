@@ -28,7 +28,6 @@ The PKGBUILD files for the packages in this repository are either:
 
 ## Acknowledgements
 The following packages were taken from the AUR - check them out!
-- [bsp-layout](https://aur.archlinux.org/packages/bsp-layout)
 - [bspwm-git](https://aur.archlinux.org/packages/bspwm-git)
 - [calamares](https://aur.archlinux.org/packages/calamares)
 - [catppuccin-gtk-theme-mocha](https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha)
