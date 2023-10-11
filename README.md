@@ -41,6 +41,7 @@ The following packages were taken from the AUR - check them out!
 - [papirus-folders-catppucin-git](https://aur.archlinux.org/packages/papirus-folders-catppuccin-git)
 - [paru](https://aur.archlinux.org/packages/paru)
 - [qview](https://aur.archlinux.org/packages/qview)
+- [sleepyneko-git](https://aur.archlinux.org/packages/sleepyneko-git)
 - [sxhkd-git](https://aur.archlinux.org/packages/sxhkd-git)
 - [xinit-xsession](https://aur.archlinux.org/packages/xinit-xsession)
 
