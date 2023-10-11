@@ -64,7 +64,7 @@ if [[ "$response" =~ ^[Yy]$ ]]; then
     # Loop through packages and build them
     for pkg_to_build in "${packages[@]}"
     do
-        echo "git clone https://aur.archlinux.org/${pkg_to_build}.git"
+        git clone https://aur.archlinux.org/${pkg_to_build}.git
         cd "$pkg_to_build"
         sudo ccm s
         cp *.pkg.tar.zst ../x86_64/
