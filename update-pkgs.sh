@@ -14,6 +14,17 @@ if [ ! -d "x86_64" ]; then
   exit 1
 fi
 
+# Check if Clean Chroot Manager is installed and configured
+if ! command -v ccm &> /dev/null; then
+  echo "Clean Chroot Manager is not installed."
+  exit 1
+fi
+
+if ! [ -f "~/.config/clean-chroot-manager.conf" ]; then
+  echo "Clean Chroot Manager is not configured."
+  exit 1
+fi
+
 # Define package names to exclude from building
 exclusions=("lsb-release-meowix" "bsp-layout" "python-ismeowix")
 # Initialize an array to store package names
@@ -49,16 +60,18 @@ response=${response:-Y}
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
     echo "Building packages."
+    sudo ccm c
     # Loop through packages and build them
     for pkg_to_build in "${packages[@]}"
     do
-        paru -G "$pkg_to_build"
+        echo "git clone https://aur.archlinux.org/${pkg_to_build}.git"
         cd "$pkg_to_build"
-        makepkg -sr
+        sudo ccm s
         cp *.pkg.tar.zst ../x86_64/
         cd ..
         rm -rf "$pkg_to_build"
     done
+    sudo ccm n
 else
 	echo "Exiting."
 	exit 0
