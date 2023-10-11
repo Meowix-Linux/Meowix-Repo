@@ -20,7 +20,7 @@ if ! command -v ccm &> /dev/null; then
   exit 1
 fi
 
-if ! [ -f "~/.config/clean-chroot-manager.conf" ]; then
+if [ ! -f ~/.config/clean-chroot-manager.conf ]; then
   echo "Clean Chroot Manager is not configured."
   exit 1
 fi
